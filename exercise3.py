@@ -15,15 +15,11 @@ __license__ = "MIT License"
 
 def diagnose_car():
     """
-    Interactively queries the user with yes/no questions to identify a
-    possible issue with a car.
-
-    Inputs:
-
-    Expected Outputs:
-
-    Errors:
-
+    is the car silent when you turn the key?
+    yes
+    are the battery terminals corroded?
+    yes
+    clean terminals and try starting again
     """
 
     print("The battery cables may be damaged. Replace cables and try again.")
