@@ -13,5 +13,6 @@ __copyright__ = "2015 Susan Sim"
 __license__ = "MIT License"
 
 #tessie's second change
+#Dusan's first change
 money = 1000.00
 print(money)
