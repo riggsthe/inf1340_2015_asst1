@@ -33,4 +33,14 @@ def name_that_shape():
         print("Your shape is a pentagon")
     elif sides == "6":
         print("Your shape is a hexagon")
+    elif sides == "7":
+        print("Your shape is a heptagon")
+    elif sides == "8":
+        print("Your shape is an octagon")
+    elif sides == "9":
+        print("Your shape is an enneagon")
+    elif sides == "10":
+        print("Your shape is a decagon")
+    else:
+        print("Error")
 name_that_shape()
