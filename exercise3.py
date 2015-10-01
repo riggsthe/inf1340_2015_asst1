@@ -20,6 +20,7 @@ def diagnose_car():
     are the battery terminals corroded?
     yes
     clean terminals and try starting again
+    test
     """
 
     print("The battery cables may be damaged. Replace cables and try again.")
