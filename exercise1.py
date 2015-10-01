@@ -58,8 +58,13 @@ print("Her broker's total fee was")
 broker_total_fee = broker_commission + second_broker_commission
 print broker_total_fee
 
+# establish end of the day take home by subtracting total broker fee from end profit
+end_of_the_day = profit - broker_total_fee
 
-if broker_total_fee > profit:
-    print("Lakshmi lost money.")
-else:
+# determine whether or not Lakshmi made a profit or lost money by determining if end of the day take home is positive or negative.
+if end_of_the_day > 0:
     print("Lakshmi made a profit!")
+if end_of_the_day < 0:
+    print("Lakshmi lost money.")
+if end_of_the_day == 0:
+    print("Lakshmi broke even.")
