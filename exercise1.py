@@ -32,7 +32,6 @@ broker_commission = total_cost * 0.03
 print ("The broker fee on this first sale was")
 print broker_commission
 
-# two weeks later
 print("Two Weeks Later...")
 # establish number of shares sold
 number_of_shares_sold = 2000
@@ -47,4 +46,20 @@ print("selling her shares.")
 second_broker_commission = total_gain * 0.03
 print("The broker fee on this second sale was")
 print second_broker_commission
-# final_result = (total_gain - total_cost)
+
+# establish profit
+profit = total_gain - total_cost
+print ("Without factoring in her broker's commissions, Lakshmi made")
+print profit
+print ("from her trading.")
+
+print("Her broker's total fee was")
+# establish broker's total fee formula
+broker_total_fee = broker_commission + second_broker_commission
+print broker_total_fee
+
+
+if broker_total_fee > profit:
+    print("Lakshmi lost money.")
+else:
+    print("Lakshmi made a profit!")
