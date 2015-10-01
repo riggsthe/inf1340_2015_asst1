@@ -60,6 +60,8 @@ print broker_total_fee
 
 # establish end of the day take home by subtracting total broker fee from end profit
 end_of_the_day = profit - broker_total_fee
+print("Factoring in profits, costs and broker's commissions, Lakshmi had")
+print end_of_the_day
 
 # determine whether or not Lakshmi made a profit or lost money by determining if end of the day take home is positive or negative.
 if end_of_the_day > 0:
