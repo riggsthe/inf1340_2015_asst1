@@ -20,4 +20,4 @@ print(money)
 #price_per_share = 900.00
 # total_cost = (number_of_shares * price_per_share)
 #broker_commission = total_cost * 0.03
-#sold stock for 942.75 a share
+#sold stock for 942.75 a share 
