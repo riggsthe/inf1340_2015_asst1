@@ -40,7 +40,7 @@ def name_that_shape():
     elif sides == "9":
         print("Your shape is an enneagon")
     elif sides == "10":
-        print("decagon")
+        print("Your shape is a decagon")
     else:
         print("Error")
 name_that_shape()
