@@ -24,7 +24,9 @@ __license__ = "MIT License"
 
 
 def name_that_shape():
+    # request input from user
     sides = raw_input("Input the number of sides your shape has!")
+    # begin to display names for shapes with corresponding number of sides entered
     if sides == "3":
         print("Your shape is a triangle")
     elif sides == "4":
@@ -41,6 +43,7 @@ def name_that_shape():
         print("Your shape is an enneagon")
     elif sides == "10":
         print("Your shape is a decagon")
+    # In the case the input is not valid, display error
     else:
         print("Error")
 name_that_shape()
