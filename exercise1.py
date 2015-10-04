@@ -12,58 +12,58 @@ __copyright__ = "2015 Susan Sim"
 __license__ = "MIT License"
 
 
-# original notes left by prof money = 1000.00 print(money)
-
-#TESSIE'S CODE STARTS!
-
-# establish number_of_shares_bought = 2000
+# Note how many shares Lakshmi bought and establish a variable for those shares
 number_of_shares_bought = 2000
-# establish price_per_share_buy = 900.00
+# Establish a variable for the amount of money each share cost to buy
 price_per_share_buy = 900.00
-# establish total cost formula
+# Establish a total cost variable which multiples the amount of shares bought by the cost per share
 total_cost = (number_of_shares_bought * price_per_share_buy)
 print ("Lakshmi spent")
 print total_cost
 print ("buying her shares.")
 
-# establish first broker commission formula
+# Establish the broker's commission on this purchase by multiplying the total cost by 3%
 broker_commission = total_cost * 0.03
-
 print ("The broker fee on this first sale was")
 print broker_commission
 
 print("Two Weeks Later...")
-# establish number of shares sold
+# Note how many shares Lakshmi sold and establish a variable for those shares
 number_of_shares_sold = 2000
-# establish price per share to sell
+# Establish a variable for the new price per share to sell
 price_per_share_sell = 942.75
-# establish total gain formula
+# Establish a total gain variable which multiplies the number of shares sold by the new price per share
 total_gain = (number_of_shares_sold * price_per_share_sell)
 print("Lakshmi made")
 print total_gain
 print("selling her shares.")
-# establish second broker commission formula
+
+# Establish the broker's second commission by multiplying the total gain by 3%
 second_broker_commission = total_gain * 0.03
 print("The broker fee on this second sale was")
 print second_broker_commission
 
-# establish profit
+# Establish the total profit of Lakshmi's trading on its own by subtracting the total cost from the total gain
 profit = total_gain - total_cost
 print ("Without factoring in her broker's commissions, Lakshmi made")
 print profit
 print ("from her trading.")
 
-print("Her broker's total fee was")
-# establish broker's total fee formula
+# Figure out the broker's total fees by adding the first broker commission to the second broker commission
+print("In total Lakshmi paid her broker")
 broker_total_fee = broker_commission + second_broker_commission
 print broker_total_fee
 
-# establish end of the day take home by subtracting total broker fee from end profit
+# Establish the amount of money Lakshmi had at the end of the day by subtracting the broker's total
+# fee from Lakshmi's profits
 end_of_the_day = profit - broker_total_fee
-print("Factoring in profits, costs and broker's commissions, Lakshmi had")
+print("Factoring in profits, costs and broker's commissions in the end Lakshmi had")
 print end_of_the_day
 
-# determine whether or not Lakshmi made a profit or lost money by determining if end of the day take home is positive or negative.
+# Determine whether or not Lakshmi made a profit or lost money by determining if end of the day take home is
+#  positive or negative.
+# Establish an if statement to determine the output for the three scenarios: she lost money, she made money
+# or she broke even
 if end_of_the_day > 0:
     print("Lakshmi made a profit!")
 if end_of_the_day < 0:
