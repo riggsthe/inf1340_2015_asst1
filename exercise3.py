@@ -22,8 +22,10 @@ def diagnose_car(answer):
     clean terminals and try starting again
     test
     """
-# Issue an instruction to user to answer the first question 1 
-first_input = raw_input ("Is the car silent when you turn the key?")
+# Issue an instruction to user to answer the first question 1
+# display and declare first input
+first_input = raw_input("Is the car silent when you turn the key?")
+# accept user input to initiate second input
 if first_input == "Y":
     second_input = raw_input("Are the battery terminals corroded?")
     if second_input == "Y":
@@ -46,10 +48,8 @@ elif first_input == "N":
                     print("Get it in for service.")
                 elif sixth_input == "N":
                     print("Check to ensure the choke is opening and closing.")
+                    # catch dead end scenario
             elif fifth_input == "N":
-                print("Error.")
-        
-
-
+                print("Engine is not getting enough fuel. Clean fuel pump.")
 
 diagnose_car(raw_input)
