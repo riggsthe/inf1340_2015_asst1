@@ -42,14 +42,3 @@ broker_total_fee = broker_commission + second_broker_commission
 # fee from Lakshmi's profits
 end_of_the_day = profit - broker_total_fee
 print end_of_the_day
-
-# Determine whether or not Lakshmi made a profit or lost money by determining if end of the day take home is
-#  positive or negative.
-# Establish an if statement to determine the output for the three scenarios: she lost money, she made money
-# or she broke even
-if end_of_the_day > 0:
-    print("Lakshmi made a profit!")
-if end_of_the_day < 0:
-    print("Lakshmi lost money.")
-if end_of_the_day == 0:
-    print("Lakshmi broke even.")
