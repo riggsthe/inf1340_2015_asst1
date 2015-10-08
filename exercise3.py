@@ -52,7 +52,7 @@ def diagnose_car(answer):
             # final answer if Y
             if fourth_input == "Y":
                 print("Check spark plug connections.")
-            # Instruct user to answer fifth
+            # Instruct user to answer fifth question
             if fourth_input == "N":
                 fifth_input = raw_input("Does the engine start and then die?")
                 if fifth_input == "Y":
