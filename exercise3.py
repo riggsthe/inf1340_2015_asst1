@@ -13,7 +13,7 @@ __copyright__ = "2015 Susan Sim"
 __license__ = "MIT License"
 
 
-def diagnose_car(answer):
+def diagnose_car():
     """
     is the car silent when you turn the key?
     yes
@@ -65,4 +65,4 @@ def diagnose_car(answer):
                 elif fifth_input == "N":
                     print("Engine is not getting enough fuel. Clean fuel pump.")
 
-# diagnose_car(raw_input)
+diagnose_car()
