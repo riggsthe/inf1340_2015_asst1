@@ -39,7 +39,7 @@ elif first_input == "N":
     elif third_input == "N":
         fourth_input = raw_input("Does the car crank up but fail to start?")
         if fourth_input == "Y":
-            print("Check spark plug connections")
+            print("Check spark plug connections.")
         if fourth_input == "N":
             fifth_input = raw_input("Does the engine start and then die?")
             if fifth_input == "Y":
