@@ -22,24 +22,37 @@ def diagnose_car(answer):
     clean terminals and try starting again
     test
     """
-    # Issue an instruction to user to answer the first question 1
-    # display and declare first input
+    # Issue an instruction to user to answer the first question
     first_input = raw_input("Is the car silent when you turn the key?")
-    # accept user input to initiate second input
+    # Establish if statement if the answer to first input is yes (Y) or no (N)
     if first_input == "Y":
+        # Instruct user to answer second question if the answer to input 1 is Y
         second_input = raw_input("Are the battery terminals corroded?")
+        # Establish if and elif statements for Y or N answers to second question
         if second_input == "Y":
+            # Since both answers produce dead ends use print statements to show the
+            # final answers rather than an input function
             print("Clean terminals and try starting again.")
         elif second_input == "N":
             print("Replace cables and try again.")
+    # Establish elif statement for if the answer to the second question is N
     elif first_input == "N":
+        # Instruct user to answer third question if the answer to question 1 is N
         third_input = raw_input("Does the car make a clicking noise?")
+        # Establish if and elif statements for Y or N answers to third question
+        # Since a Y answer produces a dead end use a print statements to show the
+        # final answer if Y
         if third_input == "Y":
-            raw_input("Replace the battery.")
+            print("Replace the battery.")
+        # Instruct user to answer fourth question if the answer to question 3 is N
         elif third_input == "N":
             fourth_input = raw_input("Does the car crank up but fail to start?")
+            # Establish if and elif statements for Y or N answers to fourth question
+            # Since a Y answer produces a dead end use a print statements to show the
+            # final answer if Y
             if fourth_input == "Y":
                 print("Check spark plug connections.")
+            # Instruct user to answer fifth
             if fourth_input == "N":
                 fifth_input = raw_input("Does the engine start and then die?")
                 if fifth_input == "Y":
