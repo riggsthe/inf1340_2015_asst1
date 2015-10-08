@@ -22,7 +22,7 @@ def diagnose_car(answer):
     clean terminals and try starting again
     test
     """
-# Issue an instruction to user to answer the first question
+# Issue an instruction to user to answer the first question 1 
 first_input = raw_input ("Is the car silent when you turn the key?")
 if first_input == "Y":
     second_input = raw_input("Are the battery terminals corroded?")
