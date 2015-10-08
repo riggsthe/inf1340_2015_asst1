@@ -13,7 +13,7 @@ __copyright__ = "2015 Susan Sim"
 __license__ = "MIT License"
 
 
-def diagnose_car():
+def diagnose_car(answer):
     """
     is the car silent when you turn the key?
     yes
@@ -23,19 +23,19 @@ def diagnose_car():
     test
     """
 # Issue an instruction to user to answer the first question
-    answer = raw_input("Is the car silent when you turn the key?")
-    if answer == "Y":
-        raw_input("Are the battery terminals corroded?")
-        if "Y":
-            print("Clean terminals and try starting again.")
-        elif "N":
-            print("Replace cables and try again.")
-    elif answer == "N":
-        raw_input("Does the car make a clicking noise?")
-        if answer == "Y":
-            raw_input("Replace the battery.")
-        elif answer == "N":
-            raw_input("Does the car crank up but fail to start?")
+first_input = raw_input ("Is the car silent when you turn the key?")
+if first_input == "Y":
+    second_input = raw_input("Are the battery terminals corroded?")
+    if second_input == "Y":
+        print("Clean terminals and try starting again.")
+    elif second_input == "N":
+        print("Replace cables and try again.")
+elif first_input == "N":
+    third_input = raw_input("Does the car make a clicking noise?")
+    if third_input == "Y":
+        raw_input("Replace the battery.")
+    elif third_input == "N":
+        raw_input("Does the car crank up but fail to start?")
 
 
-diagnose_car()
+diagnose_car(raw_input)
