@@ -35,7 +35,17 @@ elif first_input == "N":
     if third_input == "Y":
         raw_input("Replace the battery.")
     elif third_input == "N":
-        raw_input("Does the car crank up but fail to start?")
+        fourth_input = raw_input("Does the car crank up but fail to start?")
+        if fourth_input == "Y":
+            print("Check spark plug connections")
+        if fourth_input == "N":
+            fifth_input = raw_input("Does the engine start and then die?")
+        if fifth_input == "Y":
+            print("Does your car have fuel injection?")
+        if fifth_input == "N":
+            print("Error")
+        
+
 
 
 diagnose_car(raw_input)
