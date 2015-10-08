@@ -40,10 +40,14 @@ elif first_input == "N":
             print("Check spark plug connections")
         if fourth_input == "N":
             fifth_input = raw_input("Does the engine start and then die?")
-        if fifth_input == "Y":
-            print("Does your car have fuel injection?")
-        if fifth_input == "N":
-            print("Error")
+            if fifth_input == "Y":
+                sixth_input = raw_input("Does your car have fuel injection?")
+                if sixth_input == "Y":
+                    print("Get it in for service.")
+                elif sixth_input == "N":
+                    print("Check to ensure the choke is opening and closing.")
+            elif fifth_input == "N":
+                print("Error.")
         
 
 
