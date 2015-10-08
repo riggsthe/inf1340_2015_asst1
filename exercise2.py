@@ -28,21 +28,21 @@ def name_that_shape():
     sides = raw_input("Input the number of sides your shape has!")
     # begin to display names for shapes with corresponding number of sides entered
     if sides == "3":
-        print("Your shape is a triangle")
+        print("triangle")
     elif sides == "4":
-        print("Your shape is a quadrilateral")
+        print("quadrilateral")
     elif sides == "5":
-        print("Your shape is a pentagon")
+        print("pentagon")
     elif sides == "6":
-        print("Your shape is a hexagon")
+        print("hexagon")
     elif sides == "7":
-        print("Your shape is a heptagon")
+        print("heptagon")
     elif sides == "8":
-        print("Your shape is an octagon")
+        print("octagon")
     elif sides == "9":
-        print("Your shape is an enneagon")
+        print("nonagon")
     elif sides == "10":
-        print("Your shape is a decagon")
+        print("decagon")
     # In the case the input is not valid, display error
     else:
         print("Error")
