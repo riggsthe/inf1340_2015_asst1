@@ -22,34 +22,34 @@ def diagnose_car(answer):
     clean terminals and try starting again
     test
     """
-# Issue an instruction to user to answer the first question 1
-# display and declare first input
-first_input = raw_input("Is the car silent when you turn the key?")
-# accept user input to initiate second input
-if first_input == "Y":
-    second_input = raw_input("Are the battery terminals corroded?")
-    if second_input == "Y":
-        print("Clean terminals and try starting again.")
-    elif second_input == "N":
-        print("Replace cables and try again.")
-elif first_input == "N":
-    third_input = raw_input("Does the car make a clicking noise?")
-    if third_input == "Y":
-        raw_input("Replace the battery.")
-    elif third_input == "N":
-        fourth_input = raw_input("Does the car crank up but fail to start?")
-        if fourth_input == "Y":
-            print("Check spark plug connections.")
-        if fourth_input == "N":
-            fifth_input = raw_input("Does the engine start and then die?")
-            if fifth_input == "Y":
-                sixth_input = raw_input("Does your car have fuel injection?")
-                if sixth_input == "Y":
-                    print("Get it in for service.")
-                elif sixth_input == "N":
-                    print("Check to ensure the choke is opening and closing.")
-                    # catch dead end scenario
-            elif fifth_input == "N":
-                print("Engine is not getting enough fuel. Clean fuel pump.")
+    # Issue an instruction to user to answer the first question 1
+    # display and declare first input
+    first_input = raw_input("Is the car silent when you turn the key?")
+    # accept user input to initiate second input
+    if first_input == "Y":
+        second_input = raw_input("Are the battery terminals corroded?")
+        if second_input == "Y":
+            print("Clean terminals and try starting again.")
+        elif second_input == "N":
+            print("Replace cables and try again.")
+    elif first_input == "N":
+        third_input = raw_input("Does the car make a clicking noise?")
+        if third_input == "Y":
+            raw_input("Replace the battery.")
+        elif third_input == "N":
+            fourth_input = raw_input("Does the car crank up but fail to start?")
+            if fourth_input == "Y":
+                print("Check spark plug connections.")
+            if fourth_input == "N":
+                fifth_input = raw_input("Does the engine start and then die?")
+                if fifth_input == "Y":
+                    sixth_input = raw_input("Does your car have fuel injection?")
+                    if sixth_input == "Y":
+                        print("Get it in for service.")
+                    elif sixth_input == "N":
+                        print("Check to ensure the choke is opening and closing.")
+                        # catch dead end scenario
+                elif fifth_input == "N":
+                    print("Engine is not getting enough fuel. Clean fuel pump.")
 
-diagnose_car(raw_input)
+# diagnose_car(raw_input)
