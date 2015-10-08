@@ -52,17 +52,26 @@ def diagnose_car():
             # final answer if Y
             if fourth_input == "Y":
                 print("Check spark plug connections.")
-            # Instruct user to answer fifth question
+            # Instruct user to answer fifth question if the answer to question 4 is N
             if fourth_input == "N":
                 fifth_input = raw_input("Does the engine start and then die?")
+                # Establish if and elif statements for Y or N answers to fifth question
                 if fifth_input == "Y":
+                    # Instruct user to answer sixth question if the answer to question 5 is Y
                     sixth_input = raw_input("Does your car have fuel injection?")
+                    # Establish if and elif statements for Y or N answers to sixth question
                     if sixth_input == "Y":
+                        # Since a Y answer produces a dead end use a print statements to show the
+                        # final answer if Y
                         print("Get it in for service.")
                     elif sixth_input == "N":
+                        # Since a N answer produces a dead end use a print statements to show the
+                        # final answer if N
                         print("Check to ensure the choke is opening and closing.")
                         # catch dead end scenario
                 elif fifth_input == "N":
+                    # Since a N answer produces a dead end use a print statements to show the
+                    # final answer if N
                     print("Engine is not getting enough fuel. Clean fuel pump.")
 
-diagnose_car()
+# diagnose_car()
